@@ -81083,7 +81083,7 @@ var WpRestClient = class extends AbstractWordPressClient {
   async getCategories(certificate) {
     var _a;
     const data = await this.client.httpGet(
-      getUrl((_a = this.context.endpoints) == null ? void 0 : _a.getCategories, "wp-json/wp/v2/categories"),
+      getUrl((_a = this.context.endpoints) == null ? void 0 : _a.getCategories, "wp-json/wp/v2/categories?per_page=100"),
       {
         headers: this.context.getHeaders(certificate)
       }
