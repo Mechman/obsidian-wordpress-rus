@@ -77,8 +77,8 @@ export class WpRestClient extends AbstractWordPressClient {
         content,
         status: postParams.status,
         comment_status: postParams.commentStatus,
-        categories: postParams.categories,
-        tags: postParams.tags ?? [],
+        //categories: postParams.categories,
+        //tags: postParams.tags ?? [],
         ...extra
       },
       {
